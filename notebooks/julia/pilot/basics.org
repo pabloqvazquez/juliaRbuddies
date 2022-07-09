@@ -1,6 +1,7 @@
 #+title: Basics on Julia
 #+author: Marco Mendoza
 #+email: marco.mendoza@wizeline.com
+#+ox-ipynb-language: julia
 
 * Introduction
 Programming goes hand in hand with mathematics, statistics, data science, and many other fields. Scientists, engineers, data scientists, and statisticians often need to automate computation that would otherwise take too long or be infeasible to carry out. This is for the purpose of prediction, planning, analysis, design, control, visualization, or as an aid for theoretical research. Often, general programming languages such as /Fortran, Python, Go, C++/, are used. Fore more mathematical statistical purposes other languages such as /Mathematica, MATLAB/Octave, R and Maple/ also are used. The process of coding involves analyzing a problem "by hand", witring the first version of the code, analyzing behavior and output, re-factoring, iterating and improving the model/code. At the end of the day a critical component is *speed*, specifically the amount of time taken by solving the problem fomr the very beginning to its final solution.
@@ -24,6 +25,7 @@ once you succesfully download and install Julia in your machine, you can now lau
 *** The Standar way
 The simples and most used way to install packages in Julia (we will see in the next section why) is using the package =Pkg=. Inside the REPL or in a notebook, you must "import" the package in the first line and following the installation of the desired package. For example:
 
+#+ipynb-newcell
 #+begin_src julia :eval no
 using Pkg
 Pkg.add("Foo")
